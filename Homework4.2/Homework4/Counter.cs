@@ -1,20 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
+﻿using System;
 namespace Homework4
 {
-    public class Counter
-    {
-        public delegate  void GetNumbers ();
+	public class Counter
+	{
+	    public delegate void GetNumbers();
         public event GetNumbers? OnCount;
 
-        public void Count ()
+        public void Count()
         {
-            for ( int i=0;i<=100;i++)
+            for (int i = 0; i <= 100; i++)
             {
-                if (i==77)
+                if (i == 77)
                 {
                     if (OnCount != null)
                     {
@@ -24,4 +20,6 @@ namespace Homework4
             }
         }
     }
+	
 }
+
